@@ -20,11 +20,25 @@ const projects = [
     liveUrl: 'https://300arundellearningcenter.com.ng/',
   },
   {
-    title: 'E-Commerce Platform',
-    description: 'Full-stack e-commerce solution with secure payment integration, product management, cart functionality, and optimized database queries.',
-    tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+    title: 'E-Commerce Web Application',
+    description: 'Full-featured online store with product catalog, search, shopping cart, secure authentication, and Stripe payment processing. Built with a responsive mobile-first layout.',
+    tags: ['React', 'Node.js', 'Express', 'MySQL', 'JWT', 'Stripe'],
     color: '#f97316',
     liveUrl: '#',
+    githubUrl: '#',
+  },
+  {
+    title: 'Admin Dashboard System',
+    description: 'Data-driven admin panel with real-time analytics, interactive charts, role-based access control, and secure data management.',
+    tags: ['React', 'C#', 'ASP.NET Core', 'SQL Server', 'Chart.js', 'Bootstrap'],
+    color: '#a855f7',
+    githubUrl: '#',
+  },
+  {
+    title: 'Fullstack Task Management App',
+    description: 'Collaborative task management tool with real-time updates, team workflows, task CRUD, and project organization. Wireframed in Figma before implementation.',
+    tags: ['React', 'Node.js', 'MongoDB', 'Express', 'JWT', 'Figma'],
+    color: '#3b82f6',
     githubUrl: '#',
   },
 ]

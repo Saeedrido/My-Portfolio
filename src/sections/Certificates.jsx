@@ -7,7 +7,8 @@ const certificates = [
   {
     id: 1,
     title: 'Software Development Completion',
-    issuer: 'TIIDELab',
+    issuer: 'MGQS (Mirza Ghulam Qadir Sahib)',
+    note: "I've been coding long before this — I joined MGQS in 2025 to formalize my skills and earn a recognized certificate. MGQS is based in Lagos.",
     image: '/software-completion-cert.jpeg',
     type: 'image',
   },
@@ -83,6 +84,11 @@ export default function Certificates() {
               <p className={`text-sm ${isDark ? 'text-accent-cyan' : 'text-accent-blue'}`}>
                 {cert.issuer}
               </p>
+              {cert.note && (
+                <p className={`text-xs mt-2 leading-relaxed ${isDark ? 'text-gray-500' : 'text-gray-400'}`}>
+                  {cert.note}
+                </p>
+              )}
             </motion.div>
           ))}
         </div>

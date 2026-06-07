@@ -48,6 +48,18 @@ const skillCategories = [
       { name: 'Figma', icon: SiFigma, level: 78 },
     ],
   },
+  {
+    title: 'Testing & QA',
+    color: '#84cc16',
+    skills: [
+      { name: 'Software Testing & Debugging', level: 90 },
+      { name: 'QA Processes', level: 85 },
+      { name: 'Web Application Knowledge', level: 90 },
+      { name: 'Test Case Creation', level: 85 },
+      { name: 'Bug Reporting', level: 88 },
+      { name: 'API Expertise', level: 92 },
+    ],
+  },
 ]
 
 export default function Skills() {

@@ -83,6 +83,7 @@ const experiences = [
 export default function Experience() {
   const [showGrade, setShowGrade] = useState(false)
   const [gradeImage, setGradeImage] = useState('')
+  const [imgLoading, setImgLoading] = useState(true)
   const { isDark } = useTheme()
 
   return (
@@ -179,7 +180,7 @@ export default function Experience() {
                   <motion.button
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    onClick={() => { setGradeImage(exp.gradeImage); setShowGrade(true) }}
+                    onClick={() => { setGradeImage(exp.gradeImage); setShowGrade(true); setImgLoading(true) }}
                     style={{
                       marginTop: '0.75rem',
                       display: 'inline-flex',
@@ -256,11 +257,44 @@ export default function Experience() {
                   <HiX style={{ width: '20px', height: '20px' }} />
                 </button>
               </div>
-              <div style={{ padding: '1rem', display: 'flex', justifyContent: 'center' }}>
+              <div style={{ padding: '1rem', display: 'flex', justifyContent: 'center', position: 'relative', minHeight: '200px' }}>
+                {imgLoading && (
+                  <div style={{
+                    position: 'absolute', inset: 0,
+                    display: 'flex', flexDirection: 'column',
+                    alignItems: 'center', justifyContent: 'center',
+                    gap: '1rem', padding: '1rem',
+                  }}>
+                    <motion.div
+                      animate={{ rotate: 360 }}
+                      transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
+                      style={{
+                        width: '40px', height: '40px',
+                        border: '3px solid',
+                        borderColor: isDark ? '#1e293b' : '#e2e8f0',
+                        borderTopColor: '#06b6d4',
+                        borderRadius: '50%',
+                      }}
+                    />
+                    <motion.p
+                      animate={{ opacity: [0.4, 1, 0.4] }}
+                      transition={{ duration: 1.5, repeat: Infinity }}
+                      style={{ fontSize: '0.8rem', color: isDark ? '#94a3b8' : '#64748b' }}
+                    >
+                      Loading grade proof...
+                    </motion.p>
+                  </div>
+                )}
                 <img
                   src={gradeImage}
                   alt="Internship Grade Proof"
-                  style={{ maxWidth: '100%', maxHeight: '60vh', borderRadius: '0.5rem', objectFit: 'contain' }}
+                  onLoad={() => setImgLoading(false)}
+                  style={{
+                    maxWidth: '100%', maxHeight: '60vh',
+                    borderRadius: '0.5rem', objectFit: 'contain',
+                    opacity: imgLoading ? 0 : 1,
+                    transition: 'opacity 0.3s',
+                  }}
                 />
               </div>
             </motion.div>

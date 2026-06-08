@@ -1,9 +1,7 @@
 import { useState, useEffect } from 'react'
-import { AnimatePresence } from 'framer-motion'
 import { ThemeProvider } from './context/ThemeContext'
 import Navbar from './components/Navbar'
 import Loader from './components/Loader'
-import DoorReveal from './components/DoorReveal'
 import ScrollToTop from './components/ScrollToTop'
 import ThemeTransition from './components/ThemeTransition'
 import Particles from './components/Particles'
@@ -19,12 +17,10 @@ import Footer from './components/Footer'
 
 function App() {
   const [loading, setLoading] = useState(true)
-  const [doorPhase, setDoorPhase] = useState('idle')
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false)
-      setDoorPhase('closing')
     }, 2500)
     return () => clearTimeout(timer)
   }, [])
@@ -33,16 +29,7 @@ function App() {
 
   return (
     <ThemeProvider>
-      <AnimatePresence>
-        {doorPhase !== 'done' && (
-          <DoorReveal
-            key="door"
-            onComplete={() => setDoorPhase('done')}
-          />
-        )}
-      </AnimatePresence>
-
-      <div className="relative" style={{ opacity: doorPhase === 'done' ? 1 : 0 }}>
+      <div className="relative">
         <ThemeTransition />
         <Particles />
         <Navbar />

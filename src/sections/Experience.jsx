@@ -5,6 +5,23 @@ import { useTheme } from '../context/ThemeContext'
 
 const experiences = [
   {
+    company: '300 Arundel Learning Limited — School Management Portal',
+    role: 'Full-Stack Developer',
+    period: '2025',
+    description: [
+      'Built a full-stack school management system (React + .NET) for a private school in Lagos, Nigeria',
+      'Student management — Registration, class assignment, ID card generation, CSV export with paginated student lists',
+      'Exams & assessments — Exam creation, question banks (with DOCX upload), automated grading, theory marking, result computation, report cards',
+      'Promotions & academic tracking — Term-to-term promotion with configurable criteria, cumulative result calculation, position ranking',
+      'Entrance exams — Full candidate lifecycle from registration to auto-graded entrance testing with token-based access links',
+      'Comments engine — Teacher remarks and headmaster comments with batch management and default seeding',
+      'Notifications — Parent notification system via the Information module',
+      'Role-based dashboards — Admin, Teacher, Student, and Parent portals with granular access control',
+      'System Settings — Admin panel for global configuration including geofencing toggles, coordinates, and radius',
+      'Implemented GPS-based geofencing for the exam system, using real-time location verification via the Haversine formula to restrict exam access to within the school premises — configurable through an admin settings panel',
+    ],
+  },
+  {
     company: 'HEIMDALL1791 TECHNOLOGY (American Company)',
     role: 'Software Engineer',
     period: '2022 – 2024',
@@ -13,7 +30,7 @@ const experiences = [
       'Built RESTful APIs with C# and ASP.NET Core for a payment-integrated platform backend, handling transaction workflows and third-party integrations',
       'Developed Node.js and Express REST APIs for a separate client-facing application, supporting frontend data needs and external service integrations',
       'Integrated idempotent payment processing using idempotency keys to prevent duplicate charges and ensure exactly-once transaction handling across network retries',
-      'Optimized MySQL database queries, reducing data retrieval times and enhancing application performance',
+      'Optimized SQL database queries, reducing data retrieval times and enhancing application performance',
       'Designed and implemented admin dashboards with real-time data visualizations for business monitoring',
     ],
   },

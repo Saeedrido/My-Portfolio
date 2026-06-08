@@ -12,10 +12,11 @@ const projects = [
     liveUrl: 'https://team-oscar-frontend-march.vercel.app/',
     githubUrl: '#',
   },
+
   {
-    title: '300 Arundel Learning Center',
-    description: 'Live educational platform showcasing institutional information, programs, and resources for students and parents. Built with a full-stack approach combining both backend and frontend technologies.',
-    tags: ['React', 'Node.js', 'C#', 'ASP.NET Core', 'MySQL', 'Responsive'],
+    title: '300 Arundel Learning Limited — School Management Portal',
+    description: 'Live school management portal with full academic lifecycle digitization.',
+    tags: ['React', '.NET', 'C#', 'ASP.NET Core', 'PostgreSQL', 'GPS Geofencing'],
     color: '#10b981',
     liveUrl: 'https://300arundellearningcenter.com.ng/',
   },
@@ -25,20 +26,6 @@ const projects = [
     tags: ['React', 'Node.js', 'Express', 'MySQL', 'JWT', 'Stripe'],
     color: '#f97316',
     liveUrl: '#',
-    githubUrl: '#',
-  },
-  {
-    title: 'Admin Dashboard System',
-    description: 'Data-driven admin panel with real-time analytics, interactive charts, role-based access control, and secure data management.',
-    tags: ['React', 'C#', 'ASP.NET Core', 'SQL Server', 'Chart.js', 'Bootstrap'],
-    color: '#a855f7',
-    githubUrl: '#',
-  },
-  {
-    title: 'Fullstack Task Management App',
-    description: 'Collaborative task management tool with real-time updates, team workflows, task CRUD, and project organization. Wireframed in Figma before implementation.',
-    tags: ['React', 'Node.js', 'MongoDB', 'Express', 'JWT', 'Figma'],
-    color: '#3b82f6',
     githubUrl: '#',
   },
 ]

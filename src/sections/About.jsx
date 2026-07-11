@@ -50,20 +50,15 @@ export default function About() {
             transition={{ duration: 0.6, ease: 'easeOut' }}
             className="relative"
           >
-            <div className={`relative w-full max-w-md mx-auto aspect-square rounded-2xl overflow-hidden ${
-              isDark ? 'bg-dark-card' : 'bg-white shadow-lg'
-            }`}>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className={`w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-accent-cyan to-accent-purple flex items-center justify-center`}>
-                    <span className="text-5xl font-bold text-white">A</span>
-                  </div>
-                  <p className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
-                    Abdul-Raheed M.
-                  </p>
+            <div className="relative flex items-center justify-center">
+              <div className="text-center">
+                <div className={`mx-auto mb-4 rounded-full overflow-hidden ring-4 ring-accent-cyan/30 bg-white`} style={{ width: '200px', height: '200px' }}>
+                  <img src="/profile-pic.png" alt="Abdul-Raheed Muhammad-Saeed" className="w-full h-full object-cover" />
                 </div>
+                <p className={`text-base ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
+                  Abdul-Raheed M.
+                </p>
               </div>
-              <div className="absolute -inset-1 bg-gradient-to-r from-accent-cyan/20 to-accent-purple/20 rounded-2xl blur-xl -z-10" />
             </div>
           </motion.div>
 

@@ -18,7 +18,14 @@ const projects = [
     description: 'Live school management portal with full academic lifecycle digitization.',
     tags: ['React', '.NET', 'C#', 'ASP.NET Core', 'PostgreSQL', 'GPS Geofencing'],
     color: '#10b981',
-    liveUrl: 'https://300arundellearningcenter.com.ng/',
+    liveUrl: 'https://300arrundellearningcenter.com.ng/',
+  },
+  {
+    title: 'BillXpress — Bill Payment Platform',
+    description: 'My first self-built payment platform. Users can fund a wallet via Paystack and pay for airtime, data, cable TV, electricity, betting, and education fees. Built with React, Express, and PostgreSQL.',
+    tags: ['React', 'TypeScript', 'Express.js', 'PostgreSQL', 'Paystack', 'Tailwind'],
+    color: '#3b82f6',
+    liveUrl: 'https://billxpress1.vercel.app/',
   },
   {
     title: 'E-Commerce Web Application',

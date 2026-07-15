@@ -22,6 +22,18 @@ const experiences = [
     ],
   },
   {
+    company: 'BillXpress — Bill Payment Platform',
+    role: 'Self-built Payment Platform',
+    period: '2026',
+    description: [
+      'My first self-built payment platform — a full-stack bill payment system with wallet funding via Paystack, handling the complete transaction lifecycle from initialization to webhook confirmation',
+      'Users can fund their wallet via card, bank transfer, or USSD and instantly purchase airtime, data bundles, cable TV subscriptions, electricity tokens, betting wallet funding, and education fees from a single unified balance',
+      'Implemented the complete Paystack payment lifecycle: initialize → verify → webhook confirmation with signature validation and automatic wallet credit on success',
+      'Implemented complete authentication flow with MFA (TOTP), session management with idle/absolute timeout, CSRF double-submit cookie protection, account lockout with exponential backoff, and refresh token rotation',
+      'Built admin dashboard with real-time analytics, user management, transaction oversight, spending charts, and service distribution insights using Recharts',
+    ],
+  },
+  {
     company: 'HEIMDALL1791 TECHNOLOGY (American Company)',
     role: 'Software Engineer',
     period: '2022 – 2024',

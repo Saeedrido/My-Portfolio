@@ -4,37 +4,7 @@ import { useTheme } from '../context/ThemeContext'
 
 const animations = [
   {
-    name: '1. Circle Reveal',
-    layers: ({ isDark, transitionPos }) => [{
-      initial: { clipPath: `circle(0px at ${transitionPos.x}px ${transitionPos.y}px)` },
-      animate: { clipPath: `circle(200vw at ${transitionPos.x}px ${transitionPos.y}px)` },
-      exit: { clipPath: `circle(200vw at ${transitionPos.x}px ${transitionPos.y}px)` },
-      style: { background: isDark ? '#0f172a' : '#f8fafc' },
-    }],
-  },
-  {
-    name: '2. Vertical Curtain',
-    layers: () => [{
-      initial: { scaleY: 0 },
-      animate: { scaleY: 1 },
-      exit: { scaleY: 1 },
-      style: {
-        background: 'linear-gradient(180deg, #06b6d4, #a855f7)',
-        transformOrigin: 'top',
-      },
-    }],
-  },
-  {
-    name: '3. Diagonal Wipe',
-    layers: () => [{
-      initial: { clipPath: 'polygon(0 0, 0 0, 0 100%, 0 100%)' },
-      animate: { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' },
-      exit: { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' },
-      style: { background: 'linear-gradient(135deg, #0f172a 50%, #f8fafc 50%)' },
-    }],
-  },
-  {
-    name: '4. Split-Screen',
+    name: '1. Split-Screen',
     layers: () => [
       {
         initial: { y: 0 },
@@ -57,7 +27,7 @@ const animations = [
     ],
   },
   {
-    name: '5. Morphing Grid',
+    name: '2. Morphing Grid',
     layers: ({ isDark }) => {
       const cols = 6
       const squares = []
@@ -87,34 +57,11 @@ const animations = [
       return squares
     },
   },
-  {
-    name: '6. Radial Pulse',
-    layers: ({ isDark, transitionPos }) => [{
-      initial: {
-        clipPath: `circle(0px at ${transitionPos.x}px ${transitionPos.y}px)`,
-        opacity: 0.8,
-      },
-      animate: {
-        clipPath: `circle(200vw at ${transitionPos.x}px ${transitionPos.y}px)`,
-        opacity: [0.8, 0.3, 0.8, 0.3, 0],
-        scale: [1, 1.1, 1, 1.1, 1.2],
-      },
-      exit: {
-        clipPath: `circle(200vw at ${transitionPos.x}px ${transitionPos.y}px)`,
-        opacity: 0,
-      },
-      style: {
-        background: isDark
-          ? 'radial-gradient(circle at center, #06b6d4, #a855f7, #0f172a)'
-          : 'radial-gradient(circle at center, #f97316, #06b6d4, #f8fafc)',
-      },
-    }],
-  },
 ]
 
 export default function ThemeTransition() {
   const { isDark, transitioning, transitionPos } = useTheme()
-  const [animIndex, setAnimIndex] = useState(4)
+  const [animIndex, setAnimIndex] = useState(0)
 
   const anim = animations[animIndex]
   const layers = anim.layers({ isDark, transitionPos })

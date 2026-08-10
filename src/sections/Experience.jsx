@@ -6,10 +6,10 @@ import { useTheme } from '../context/ThemeContext'
 const experiences = [
   {
     company: '300 Arundel Learning Limited — School Management Portal',
-    role: 'Full-Stack Developer',
-    period: '2025',
+    role: 'Freelance Fullstack Developer',
+    period: '2026 (1.5 months)',
     description: [
-      'Built a full-stack school management system (React + .NET) for a private school in Lagos, Nigeria',
+      'Built a full-stack school management system (React + .NET) for a private school in Lagos, Nigeria, digitizing the entire academic lifecycle',
       'Student management — Registration, class assignment, ID card generation, CSV export with paginated student lists',
       'Exams & assessments — Exam creation, question banks (with DOCX upload), automated grading, theory marking, result computation, report cards',
       'Promotions & academic tracking — Term-to-term promotion with configurable criteria, cumulative result calculation, position ranking',
@@ -24,13 +24,27 @@ const experiences = [
   {
     company: 'BillXpress — Bill Payment Platform',
     role: 'Self-built Payment Platform',
-    period: '2026',
+    period: '2025 (2 months)',
     description: [
       'My first self-built payment platform — a full-stack bill payment system with wallet funding via Paystack, handling the complete transaction lifecycle from initialization to webhook confirmation',
       'Users can fund their wallet via card, bank transfer, or USSD and instantly purchase airtime, data bundles, cable TV subscriptions, electricity tokens, betting wallet funding, and education fees from a single unified balance',
       'Implemented the complete Paystack payment lifecycle: initialize → verify → webhook confirmation with signature validation and automatic wallet credit on success',
       'Implemented complete authentication flow with MFA (TOTP), session management with idle/absolute timeout, CSRF double-submit cookie protection, account lockout with exponential backoff, and refresh token rotation',
       'Built admin dashboard with real-time analytics, user management, transaction oversight, spending charts, and service distribution insights using Recharts',
+    ],
+  },
+  {
+    company: 'E-Commerce Web Application — Fullstack Online Store',
+    role: 'Fullstack Developer',
+    period: '2025 (3 months)',
+    description: [
+      'Built a full-featured online store with product catalog, search, shopping cart, and PayPal payment processing with webhook-based payment verification and automatic order confirmation',
+      'Implemented real-time order tracking with WebSocket notifications keeping customers informed of every status change from placement to delivery',
+      'Integrated third-party logistics APIs for automated shipment tracking with live delivery status and estimated arrival times displayed on the customer dashboard',
+      'Built a customer dashboard with a live map view showing real-time delivery driver location and order progress',
+      'Implemented Redis caching for product catalog and session data, reducing page load times by over 40% and achieving 90+ Lighthouse performance scores',
+      'Designed a responsive, mobile-first UI with optimized load times and intuitive navigation',
+      'Developed RESTful backend APIs for product management, order processing, and user accounts with secure JWT authentication',
     ],
   },
   {
@@ -42,6 +56,7 @@ const experiences = [
       'Built RESTful APIs with C# and ASP.NET Core for a payment-integrated platform backend, handling transaction workflows and third-party integrations',
       'Developed Node.js and Express REST APIs for a separate client-facing application, supporting frontend data needs and external service integrations',
       'Integrated idempotent payment processing using idempotency keys to prevent duplicate charges and ensure exactly-once transaction handling across network retries',
+      'Collaborated with a distributed team of developers and designers, delivering features through Agile sprints with regular code reviews and pair programming sessions',
       'Optimized SQL database queries, reducing data retrieval times and enhancing application performance',
       'Designed and implemented admin dashboards with real-time data visualizations for business monitoring',
     ],
@@ -53,7 +68,7 @@ const experiences = [
     grade: '97%',
     gradeImage: '/intern-grade.jpeg',
     description: [
-      'Achieved 97% overall grade — the highest among peers in the internship cohort',
+      'Worked within a team of interns on grouped projects, yet achieved 97% overall — the highest grade among all peers in the internship cohort',
       'Integrated LLM-powered AI chat features enabling natural language user communication',
       'Built end-to-end messaging system for seamless real-time user interaction',
       'Developed and optimized API endpoints for AI services and message handling',
@@ -71,7 +86,7 @@ const experiences = [
   {
     company: 'SYSBEAMS, Abeokuta',
     role: 'Software Engineer',
-    period: '2022 – 2024',
+    period: '2025 (Oct – Dec)',
     description: [
       'Developed a full-featured e-commerce frontend in React with complete payment flow and cart management',
       'Built user authentication and authorization systems using JWT and ASP.NET Core',
@@ -83,9 +98,9 @@ const experiences = [
   {
     company: 'CODE LEARNERS HUB, Abeokuta',
     role: 'Coding Instructor',
-    period: '2023 – Present',
+    period: '2025 – Present',
     description: [
-      'Teach HTML, CSS, JavaScript, React, and C# to aspiring developers through structured coursework',
+      'Teach HTML, CSS, JavaScript, Python, React, and C# to aspiring developers through structured coursework',
       'Design and update course materials to reflect current industry practices and modern tooling',
       'Mentor students on real-world projects, providing code reviews and technical guidance',
     ],

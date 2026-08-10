@@ -1,7 +1,11 @@
 import { motion } from 'framer-motion'
 import { useTheme } from '../context/ThemeContext'
-import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare, FaNodeJs } from 'react-icons/fa'
-import { SiTypescript, SiBootstrap, SiDotnet, SiMysql, SiPostgresql, SiMongodb, SiFigma, SiGit } from 'react-icons/si'
+import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare, FaNodeJs, FaPython } from 'react-icons/fa'
+import {
+  SiTypescript, SiBootstrap, SiDotnet, SiMysql, SiPostgresql, SiMongodb, SiFigma, SiGit,
+  SiNextdotjs, SiAngular, SiPhp, SiLaravel, SiVercel, SiNetlify,
+  SiShopify, SiWordpress, SiStripe, SiPaypal, SiOpenai
+} from 'react-icons/si'
 import { FaDatabase } from 'react-icons/fa'
 
 const skillCategories = [
@@ -10,10 +14,12 @@ const skillCategories = [
     color: '#06b6d4',
     skills: [
       { name: 'React', icon: FaReact, level: 100 },
+      { name: 'Next.js', icon: SiNextdotjs, level: 90 },
+      { name: 'Angular', icon: SiAngular, level: 85 },
+      { name: 'JavaScript', icon: FaJsSquare, level: 100 },
+      { name: 'TypeScript', icon: SiTypescript, level: 90 },
       { name: 'HTML5', icon: FaHtml5, level: 100 },
       { name: 'CSS3', icon: FaCss3Alt, level: 100 },
-      { name: 'JavaScript', icon: FaJsSquare, level: 100 },
-      { name: 'TypeScript', icon: SiTypescript, level: 75 },
       { name: 'Bootstrap', icon: SiBootstrap, level: 85 },
     ],
   },
@@ -22,10 +28,15 @@ const skillCategories = [
     color: '#a855f7',
     skills: [
       { name: 'Node.js', icon: FaNodeJs, level: 100 },
+      { name: 'Express.js', level: 100 },
+      { name: 'Python', icon: FaPython, level: 85 },
       { name: 'C#', level: 100 },
       { name: 'ASP.NET Core', icon: SiDotnet, level: 100 },
-      { name: 'Web API', icon: SiDotnet, level: 100 },
+      { name: 'MVC', level: 90 },
+      { name: 'PHP', icon: SiPhp, level: 80 },
+      { name: 'Laravel', icon: SiLaravel, level: 80 },
       { name: 'REST APIs', level: 100 },
+      { name: 'JWT Authentication', level: 100 },
     ],
   },
   {
@@ -36,28 +47,76 @@ const skillCategories = [
       { name: 'SQL Server', icon: FaDatabase, level: 100 },
       { name: 'PostgreSQL', icon: SiPostgresql, level: 100 },
       { name: 'MongoDB', icon: SiMongodb, level: 100 },
+      { name: 'Oracle', level: 85 },
     ],
   },
   {
-    title: 'Other',
+    title: 'Tools & Platforms',
     color: '#f97316',
     skills: [
-      { name: 'UI/UX Design', icon: SiFigma, level: 82 },
       { name: 'Git/GitHub', icon: SiGit, level: 88 },
-      { name: 'Agile/Scrum', level: 80 },
+      { name: 'Postman', level: 90 },
       { name: 'Figma', icon: SiFigma, level: 78 },
+      { name: 'BigCommerce', level: 80 },
+      { name: 'Shopify', icon: SiShopify, level: 82 },
+      { name: 'WordPress', icon: SiWordpress, level: 85 },
+      { name: 'Agile/Scrum', level: 80 },
+      { name: 'VS Code', level: 95 },
+      { name: 'IIS', level: 85 },
+      { name: 'Render', level: 85 },
+      { name: 'Netlify', icon: SiNetlify, level: 88 },
+      { name: 'Vercel', icon: SiVercel, level: 90 },
+      { name: 'AWS', level: 82 },
+      { name: 'Railway', level: 85 },
+    ],
+  },
+  {
+    title: 'Payments',
+    color: '#eab308',
+    skills: [
+      { name: 'Stripe', icon: SiStripe, level: 90 },
+      { name: 'Flutterwave', level: 88 },
+      { name: 'PayPal', icon: SiPaypal, level: 88 },
+      { name: 'Paystack', level: 90 },
+      { name: 'Authorize.net', level: 85 },
+      { name: 'Braintree', level: 85 },
+      { name: 'Checkout.com', level: 85 },
+      { name: 'Monnify', level: 85 },
+    ],
+  },
+  {
+    title: 'UI/UX',
+    color: '#ec4899',
+    skills: [
+      { name: 'UI/UX Design', icon: SiFigma, level: 82 },
+      { name: 'Wireframing', level: 85 },
+      { name: 'Prototyping', level: 85 },
+      { name: 'Design Systems', level: 80 },
     ],
   },
   {
     title: 'Testing & QA',
     color: '#84cc16',
     skills: [
-      { name: 'Software Testing & Debugging', level: 90 },
+      { name: 'Troubleshooting & Debugging', level: 90 },
+      { name: 'Software Testing', level: 88 },
       { name: 'QA Processes', level: 85 },
       { name: 'Web Application Knowledge', level: 90 },
       { name: 'Test Case Creation', level: 85 },
       { name: 'Bug Reporting', level: 88 },
       { name: 'API Expertise', level: 92 },
+    ],
+  },
+  {
+    title: 'AI Tools',
+    color: '#6366f1',
+    skills: [
+      { name: 'OpenAI', icon: SiOpenai, level: 92 },
+      { name: 'Claude', level: 90 },
+      { name: 'Blackbox AI', level: 85 },
+      { name: 'ChatGPT', level: 92 },
+      { name: 'Uizard', level: 80 },
+      { name: 'Galileo AI', level: 80 },
     ],
   },
 ]

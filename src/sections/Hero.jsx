@@ -6,6 +6,7 @@ import { useTheme } from '../context/ThemeContext'
 const roles = [
   'Frontend Developer (React)',
   'Fullstack Developer (Node.js, C#)',
+  'QA Engineer Expert',
   'UI/UX Designer',
   'React, Node.js, C# Specialist',
 ]
@@ -103,7 +104,7 @@ export default function Hero() {
           style={{ fontSize: '2.5rem', fontWeight: 800, fontFamily: 'Space Grotesk, sans-serif', lineHeight: 1.1, marginBottom: '1.5rem' }}
         >
           <span style={{ color: isDark ? '#ffffff' : '#111827' }}>
-            Hi, I'm{' '}
+            Hi, I&apos;m{' '}
           </span>
           <span className="gradient-text">
             Abdul-Raheed

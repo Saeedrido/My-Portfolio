@@ -5,6 +5,19 @@ import { useTheme } from '../context/ThemeContext'
 
 const experiences = [
   {
+    company: 'RolePilot',
+    role: 'QA Engineer',
+    period: '1.5 Years',
+    description: [
+      'Worked as a QA Engineer expert, specializing in software testing and quality assurance across web applications',
+      'Used Postman for API testing, Playwright for automated browser testing, and Jira for bug tracking and agile project management',
+      'Documented bugs in Google Docs — for hosted applications, screenshotted each location where bugs occurred, imported them into the doc, and explained what happened and what could be done to fix it',
+      'Created and executed test cases, documented results, and reported bugs with clear reproduction steps',
+      'Performed regression, functional, and API testing to ensure reliability before releases',
+      'Collaborated with developers to resolve defects and uphold quality standards throughout the development lifecycle',
+    ],
+  },
+  {
     company: '300 Arundel Learning Limited — School Management Portal',
     role: 'Freelance Fullstack Developer',
     period: '2026 (1.5 months)',
@@ -57,6 +70,7 @@ const experiences = [
       'Developed Node.js and Express REST APIs for a separate client-facing application, supporting frontend data needs and external service integrations',
       'Integrated idempotent payment processing using idempotency keys to prevent duplicate charges and ensure exactly-once transaction handling across network retries',
       'Collaborated with a distributed team of developers and designers, delivering features through Agile sprints with regular code reviews and pair programming sessions',
+      'Also worked as a QA Engineer for 2 years alongside application development — creating test cases, performing manual and API testing, reporting bugs, and ensuring software quality across releases',
       'Optimized SQL database queries, reducing data retrieval times and enhancing application performance',
       'Designed and implemented admin dashboards with real-time data visualizations for business monitoring',
     ],

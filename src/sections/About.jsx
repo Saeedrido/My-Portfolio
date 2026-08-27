@@ -3,9 +3,9 @@ import { HiCode, HiCube, HiColorSwatch, HiServer } from 'react-icons/hi'
 import { useTheme } from '../context/ThemeContext'
 
 const stats = [
-  { icon: HiCode, label: '3+ Years', sublabel: 'Experience', color: '#06b6d4' },
+  { icon: HiCode, label: 'Many Years', sublabel: 'Experience', color: '#06b6d4' },
   { icon: HiCube, label: 'Fullstack', sublabel: 'Developer', color: '#a855f7' },
-  { icon: HiColorSwatch, label: 'UI/UX', sublabel: 'Designer', color: '#f97316' },
+  { icon: HiColorSwatch, label: 'QA Engineer', sublabel: 'Expert', color: '#84cc16' },
   { icon: HiServer, label: 'Backend', sublabel: 'Engineer', color: '#3b82f6' },
 ]
 
@@ -74,9 +74,15 @@ export default function About() {
             </h3>
             <div className={`space-y-4 ${isDark ? 'text-gray-400' : 'text-gray-500'} leading-relaxed`}>
               <p>
-                I'm a passionate Software Engineer with many years of professional experience
+                I&apos;m a passionate Software Engineer with many years of professional experience
                 crafting scalable, user-centric applications. My expertise spans the full development
                 stack, from building responsive React frontends to robust Node.js and C# backends.
+              </p>
+              <p>
+                I&apos;m also a QA Engineer expert with 1.5 years of experience at RolePilot and 2 years
+                of QA practice alongside app development at Heimdall1791 Technology — creating test
+                cases, performing functional and API testing, reporting bugs, and driving software
+                quality across releases.
               </p>
               <p>
                 With a strong foundation in UI/UX design principles, I bridge the gap between
@@ -84,7 +90,7 @@ export default function About() {
                 maintainable code that delivers exceptional user experiences.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies, contributing to
+                When I&apos;m not coding, you&apos;ll find me exploring new technologies, contributing to
                 open-source projects, or finding inspiration in design patterns and architecture.
               </p>
             </div>

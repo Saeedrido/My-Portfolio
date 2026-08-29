@@ -5,12 +5,12 @@ import { useTheme } from '../context/ThemeContext'
 
 const experiences = [
   {
-    company: 'RolePilot',
-    role: 'QA Engineer',
+    company: 'RolePilot (Startup)',
+    role: 'QA Engineer (Voluntary)',
     period: '1.5 Years',
     description: [
       'Worked as a QA Engineer expert, specializing in software testing and quality assurance across web applications',
-      'Used Postman for API testing, Playwright for automated browser testing, and Jira for bug tracking and agile project management',
+      'Used Postman for API testing, Playwright MCP for automated browser testing, and Jira for bug tracking and agile project management',
       'Documented bugs in Google Docs — for hosted applications, screenshotted each location where bugs occurred, imported them into the doc, and explained what happened and what could be done to fix it',
       'Created and executed test cases, documented results, and reported bugs with clear reproduction steps',
       'Performed regression, functional, and API testing to ensure reliability before releases',
@@ -61,8 +61,8 @@ const experiences = [
     ],
   },
   {
-    company: 'HEIMDALL1791 TECHNOLOGY (American Company)',
-    role: 'Software Engineer',
+    company: 'HEIMDALL1791 TECHNOLOGY (American Company — Startup)',
+    role: 'Software Engineer & QA (Contract)',
     period: '2022 – 2024',
     description: [
       'Built and maintained responsive single-page applications using React, delivering intuitive user interfaces for client-facing platforms',

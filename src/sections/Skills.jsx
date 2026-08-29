@@ -56,7 +56,7 @@ const skillCategories = [
     skills: [
       { name: 'Git/GitHub', icon: SiGit, level: 88 },
       { name: 'Postman', level: 90 },
-      { name: 'Playwright', level: 88 },
+      { name: 'Playwright MCP', level: 88 },
       { name: 'Figma', icon: SiFigma, level: 78 },
       { name: 'BigCommerce', level: 80 },
       { name: 'Shopify', icon: SiShopify, level: 82 },

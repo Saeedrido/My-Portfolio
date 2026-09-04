@@ -75,14 +75,10 @@ export default function About() {
             <div className={`space-y-4 ${isDark ? 'text-gray-400' : 'text-gray-500'} leading-relaxed`}>
               <p>
                 I&apos;m a passionate Software Engineer with many years of professional experience
-                crafting scalable, user-centric applications. My expertise spans the full development
-                stack, from building responsive React frontends to robust Node.js and C# backends.
-              </p>
-              <p>
-                I&apos;m also a QA Engineer expert with 1.5 years of experience at RolePilot and 2 years
-                of QA practice alongside app development at Heimdall1791 Technology — creating test
-                cases, performing functional and API testing, reporting bugs, and driving software
-                quality across releases.
+                across the full Software Development Life Cycle (SDLC) and Software Testing Life Cycle (STLC).
+                My expertise spans building responsive web and mobile applications using React, React Native,
+                Node.js, and C#, and validating software quality through manual testing, automated testing
+                with Playwright and Detox, and defect tracking with Jira.
               </p>
               <p>
                 With a strong foundation in UI/UX design principles, I bridge the gap between

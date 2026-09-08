@@ -6,10 +6,11 @@ import { useTheme } from '../context/ThemeContext'
 const experiences = [
   {
     company: 'RolePilot (Startup)',
-    role: 'QA Engineer (Voluntary)',
+    role: 'Software Engineer & QA (Voluntary)',
     period: '1.5 Years',
     description: [
-      'Applied the Software Testing Life Cycle (STLC) across web and mobile applications — from requirement analysis and test planning through test case design, execution, defect reporting, and validation',
+      'Contributed to both software development and quality assurance for RolePilot AI\'s web and mobile applications',
+      'Built and maintained features using React, React Native, and Node.js while applying the Software Testing Life Cycle (STLC) across the platform',
       'Performed manual testing (functional, regression, exploratory, UI/UX validation, cross-browser and cross-platform)',
       'Automated end-to-end and regression tests using Playwright (MCP) and Detox for web and mobile',
       'Tracked defects and managed test workflows using Jira; documented bugs with screenshots and reproduction steps in Google Docs; used Chrome DevTools for debugging',

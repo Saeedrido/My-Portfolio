@@ -81,6 +81,12 @@ export default function About() {
                 with Playwright and Detox, and defect tracking with Jira.
               </p>
               <p>
+                At RolePilot AI, I contribute to both building the platform and ensuring its quality —
+                developing features while applying the STLC to validate them. The same dual role carried
+                into my earlier contract work at Heimdall1791 Technology, where I developed and tested
+                applications in parallel.
+              </p>
+              <p>
                 With a strong foundation in UI/UX design principles, I bridge the gap between
                 technical implementation and visual aesthetics. I believe in writing clean,
                 maintainable code that delivers exceptional user experiences.

@@ -5,6 +5,13 @@ import { useTheme } from '../context/ThemeContext'
 
 const projects = [
   {
+    title: 'RolePilot AI',
+    description: 'An AI-powered platform where I contribute to both development and quality assurance — building features with React, React Native, and Node.js while validating them across web and mobile through manual and automated testing.',
+    tags: ['React', 'React Native', 'Node.js', 'Playwright', 'Detox', 'Jira'],
+    color: '#8b5cf6',
+    liveUrl: 'https://rolepilotai.com/',
+  },
+  {
     title: 'Team Oscar Platform',
     description: 'A full-featured frontend platform built with modern React, featuring responsive UI, dynamic components, and seamless user experience.',
     tags: ['React', 'Node.js', 'JavaScript', 'CSS3', 'Vercel'],
